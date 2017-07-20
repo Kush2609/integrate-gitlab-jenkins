@@ -1,0 +1,19 @@
+# integrate-gitlab-jenkins
+# first of all install git in ubuntu
+sudo -i -u jenkins  //goto jenkins user
+ssh-keygen   //to generate public key
+vi /var/lib/jenkins/.ssh/id_rsa.pub
+copy the key
+goto gitlab settings-->ssh keys
+paste the ssh key
+from the project in gitlab, copy the ssh url of the project.
+go to jenkins user in ubuntu - sudo -i -u jenkins
+run the command -->  git ls-remote -h <git ssh url> HEAD
+go to jenkins
+create a new job.
+configure the new job.
+In source code management section, select git.
+In repository url, give the <git ssh url>.
+In the build triggers section, select "build when a change is pushed to gitlab.........".
+done........................................................
+
