@@ -14,6 +14,7 @@ create a new job.
 configure the new job.
 In source code management section, select git.
 In repository url, give the <git ssh url>.
-In the build triggers section, select "build when a change is pushed to gitlab.........".
+In the build triggers section, select "build when a change is pushed to gitlab........." and copy the url which is given their.
+Go to the gitlab project---> settings--->integration--->paste the url in the url section--->select push event checkbox--->uncheck ssl verification checkbox--->click on add webhook button.
 done........................................................
 
